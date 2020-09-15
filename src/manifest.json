@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+
+  "name": "s2t",
+  "description": "comunicator",
+  "version": "0.1.1",
+  "icons": {
+    "128":"icon.png"
+    },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Open Chrome Audio Capture interface"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js", "recorder.js", "api_key.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "tabCapture",
+    "downloads",
+    "storage"
+  ],
+  "commands": {
+    "start": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Start Capture"
+    },
+    "stop": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "MacCtrl+Shift+X"
+      },
+      "description": "Stop Capture"
+    }
+  }
+}
