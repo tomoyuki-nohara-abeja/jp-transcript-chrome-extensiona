@@ -3,6 +3,9 @@ Chrome + Google Speech-to-text
 
 ![sketch](https://user-images.githubusercontent.com/58420094/93232896-6262ba00-f7b5-11ea-9305-a5e821b1bd27.png)
 
+![image](https://user-images.githubusercontent.com/58420094/93277706-79c59580-f7fd-11ea-999d-f3e4e83d60c8.png)
+
+
 ## what
 Transcribe the recorded voice to start-stop
 
@@ -13,8 +16,9 @@ Transcribe the recorded voice to start-stop
 
 ## todo
 
-[ ] Loop
-[ ] Silence section detection
+- [ ] make frontend ui
+- [ ] Loop
+- [ ] Silence section detection
 
 
 ## ref

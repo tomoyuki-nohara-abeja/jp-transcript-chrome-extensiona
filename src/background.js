@@ -109,12 +109,15 @@ function audioRecognize(_recorder, _audio_context, _callback){
                 return response.text();
             }).then(function (text) {
                 result_json = JSON.parse(text);
-                if (result_json.result !== undefined){
-                    let transcript = result_json.results[0].alternatives[0].transcript;
-                    let confidence = result_json.results[0].alternatives[0].confidence;
-                    console.log("ID:", ID, transcript, confidence);
+                console.log(text);
 
-                }
+                // if (result_json.result !== undefined){
+                //     let transcript = result_json.results[0].alternatives[0].transcript;
+                //     let confidence = result_json.results[0].alternatives[0].confidence;
+                //     console.log("ID:", ID, transcript, confidence);
+                // }else{
+                //     console.log("ID:", ID, "-", "-");
+                // }
             });
         };
         reader.readAsArrayBuffer(blob)
