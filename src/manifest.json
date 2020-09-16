@@ -22,22 +22,8 @@
     "tabs",
     "tabCapture",
     "downloads",
-    "storage"
-  ],
-  "commands": {
-    "start": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+S",
-        "mac": "Command+Shift+U"
-      },
-      "description": "Start Capture"
-    },
-    "stop": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+X",
-        "mac": "MacCtrl+Shift+X"
-      },
-      "description": "Stop Capture"
-    }
-  }
+    "storage",
+    "activeTab"
+
+  ]
 }

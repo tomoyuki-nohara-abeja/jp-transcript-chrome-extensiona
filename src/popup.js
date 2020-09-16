@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   start_button.onclick = () => {
     status.innerHTML = "running";
-    chrome.runtime.sendMessage("startCapture")
+    farewell = chrome.runtime.sendMessage("startCapture")
+    console.log("onClick ", farewell);
   };
 
   stop_button.onclick = () => {
@@ -14,13 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     chrome.runtime.sendMessage("stopCapture")
   };
 
-  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log(sender.tab ?
-      "from a content script:" + sender.tab.url :
-      "from the extension");
-    if(request.type === "transcript"){
-      console.log(sender);
-      console.log("[popup.js] ", request.transcript);
-    }
-  });
+  
+
 });
